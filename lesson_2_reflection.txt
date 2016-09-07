@@ -15,14 +15,33 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+     You can use git diff --staged to verify all of the differences between 
+     what is currently in stage and the last commit. In this way, you can confirm 
+     that all of the changes are related to one logical change. 
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+     When you want to make an alternate version of your code. For example an Oracle
+     versus Sql Server version. You can keep the main sections of code the same
+     but change only the aspects that reflect the different providers or 
+     syntax between Oracle and Sql Server.
+
 How do the diagrams help you visualize the branch structure?
+
+     You can tell what commits are included in each branch, as well as, 
+     where each branch originates from. It is easier to track how changes
+     can affect the other branches 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+     It is a collection of non-conflicting changes to the source files of 2 branches.
+     To illustrate that all of the commits from both branches are now part of the merged
+     branch. 
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+     PRO is that it will merge all updates to the code for you and alert when there is a conflict
+     PRO is that it will point out the area where the conflict comes from 
+     CON is that it is not complex enough to resolve the merge conflicts for you
